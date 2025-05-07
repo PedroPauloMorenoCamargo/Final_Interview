@@ -12,9 +12,9 @@ Your algorithm's time complexity must be **better than O(n log n)**, where `n` i
 
 ### Example
 
-python
-Input: nums = [1,1,1,2,2,3,3,3,4,4,4,4], k = 3  
-Output: [4, 1, 3]
+
+**Input:** `nums = [1,1,1,2,2,3,3,3,4,4,4,4]`, `k = 3`  
+**Output:** `[4, 1, 3]`
 
 Explanation:  
 - `4` appears 4 times  
