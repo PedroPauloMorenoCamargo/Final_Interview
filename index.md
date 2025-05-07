@@ -63,7 +63,6 @@ A natural first approach is to count how often each number appears, then sort th
 3. **Select Top `k`:**  
    Finally, we extract the first `k` elements from the sorted list. These are the `k` most frequent elements.
 
----
 
 **Example:**
 
@@ -73,7 +72,6 @@ Suppose `nums = [1,1,1,2,2,3]`, and `k = 2`.
 - Sorted by frequency in descending order: `[(3, 1), (2, 2), (1, 3) ]`
 - Top 2 elements: `[1, 2]`
 
----
 
 While this method works and is easy to implement, it doesn't meet the problem's constraint of being faster than `O(n log n)`. For that, we need a more efficient solution.
 
