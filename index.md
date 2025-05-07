@@ -46,10 +46,6 @@ def topKFrequent(nums: list[int], k: int) -> list[int]
 
 ## Hints
 
-## Hints
-
-## Hints
-
 <details>
 <summary><strong>Hint 1</strong></summary>
 
