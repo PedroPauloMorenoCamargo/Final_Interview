@@ -1,12 +1,9 @@
 # Final Interview
 
----
-
 ## Problem
 
 **Amazon Top K Frequent Elements**
 
----
 
 ## Top K Frequent Elements
 
@@ -14,7 +11,7 @@ Given an integer array `nums`, return the **`k`** most frequent elements.
 You may assume that the answer is **unique**, meaning there will be no ties in frequency that affect the result — the `k` most frequent elements are clearly defined.    
 Your algorithm's time complexity must be **better than O(n log n)**, where `n` is the array's length.
 
----
+
 
 ## Example
 
@@ -30,7 +27,7 @@ Explanation:
 - `2` appears only 2 times  
 So the top 3 frequent elements are `4`, `1`, and `3`.
 
----
+
 
 ## Constraints
 
@@ -38,8 +35,6 @@ So the top 3 frequent elements are `4`, `1`, and `3`.
 - `-10⁴ <= nums[i] <= 10⁴`  
 - `1 <= k <= number of unique elements in the array` 
 - The result will always have **one valid answer** — no ambiguity due to ties in frequency.
-
----
 
 
 ## Hints
@@ -54,8 +49,6 @@ So the top 3 frequent elements are `4`, `1`, and `3`.
 
 ## Solutions
 
-
----
 
 ### Sorting
 
