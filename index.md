@@ -18,12 +18,6 @@ Input: nums = [1,1,1,2,2,3,3,3,4,4,4,4], k = 3
 Output: [4, 1, 3]
 ```
 
-Explanation:
-- 4 appears 4 times  
-- 1 and 3 appear 3 times  
-- 2 appears only 2 times  
-So the top 3 frequent elements are 4, 1, and 3.
-
 Explanation:  
 - `4` appears 4 times  
 - `1` and `3` appear 3 times  
