@@ -196,6 +196,8 @@ Each method is correct, but only **Min-Heap** and **Bucket Sort** satisfy the pe
 
 ---
 
+## Solution visualization
+
 ## References
 
 - [Top K Frequent Elements – NeetCode](https://neetcode.io/problems/top-k-elements-in-list)
