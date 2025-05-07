@@ -46,11 +46,42 @@ def topKFrequent(nums: list[int], k: int) -> list[int]
 
 ## Hints
 
-1. What’s the first step? We need to know how many times each number appears in the array. Is there a data structure that can help us count occurrences quickly?
-2. Once we have the frequencies, how do we efficiently find the top `k` elements? Can we avoid sorting the entire list?
-3. Heaps are great for retrieving top values efficiently. Could we use a min-heap of size `k` to track the most frequent elements as we go?
-4. What if we wanted to do better? Could we group elements by frequency and then iterate from highest to lowest?
-5. This problem has a clear upper bound on frequency — no number appears more than `n` times. Could we use this to our advantage with something like **bucket sort**?
+## Hints
+
+<details>
+<summary>1. What’s the first step?</summary>
+
+We need to know how many times each number appears in the array.  
+Is there a data structure that can help us count occurrences quickly?
+</details>
+
+<details>
+<summary>2. After counting, how do we find the top `k`?</summary>
+
+Once we have the frequencies, how do we efficiently find the top `k` elements?  
+Can we avoid sorting the entire list?
+</details>
+
+<details>
+<summary>3. Could a heap help?</summary>
+
+Heaps are great for retrieving top values efficiently.  
+Could we use a min-heap of size `k` to track the most frequent elements as we go?
+</details>
+
+<details>
+<summary>4. Can we do better than a heap?</summary>
+
+What if we wanted to do better?  
+Could we group elements by frequency and then iterate from highest to lowest?
+</details>
+
+<details>
+<summary>5. What’s the role of a frequency bound?</summary>
+
+This problem has a clear upper bound on frequency — no number appears more than `n` times.  
+Could we use this to our advantage with something like **bucket sort**?
+</details>
 
 ---
 
