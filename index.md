@@ -36,6 +36,13 @@ So the top 3 frequent elements are `4`, `1`, and `3`.
 - `1 <= k <= number of unique elements in the array` 
 - The result will always have **one valid answer** — no ambiguity due to ties in frequency.
 
+## Assignment
+
+Implement the solution in Python. Your function must use the following declaration:
+
+```python
+def topKFrequent(nums: list[int], k: int) -> list[int]
+```
 
 ## Hints
 
@@ -75,8 +82,92 @@ Suppose `nums = [1,1,1,2,2,3]`, and `k = 2`.
 
 While this method works and is easy to implement, it doesn't meet the problem's constraint of being faster than `O(n log n)`. For that, we need a more efficient solution.
 
+### Min-Heap
+
+The sorting approach is simple but doesn’t meet the problem’s requirement of being faster than `O(n log n)`. We can do better using a **heap**.
+
+Instead of sorting the entire list of frequencies, we maintain a **min-heap of size `k`** to track the top `k` most frequent elements as we go.
 
 
+
+1. **Count Frequencies:**  
+   As before, we start by using a dictionary to count how many times each number appears. This takes `O(n)` time.
+
+2. **Use a Min-Heap:**  
+   We iterate through the frequency map and push each `(frequency, number)` pair into a heap.  
+   - If the heap exceeds size `k`, we pop the smallest frequency element (i.e., the least useful).
+   - This way, the heap always contains the top `k` frequent elements.
+
+   Because the heap size stays fixed at `k`, each push/pop is `O(log k)`, and iterating through all elements is `O(n log k)` overall better than `O(n log n)` when `k << n`.
+
+3. **Extract the Result:**  
+   At the end, we extract the elements from the heap.
+
+
+
+**Example:**
+
+Suppose `nums = [1,1,1,2,2,3]` and `k = 2`.
+
+- Frequencies: `{1: 3, 2: 2, 3: 1}`
+- Push all pairs into a heap:
+  - Push `(3, 1)` → heap = `[(3, 1)]`
+  - Push `(2, 2)` → heap = `[(2, 2), (3, 1)]`
+  - Push `(1, 3)` → heap = `[(2, 2), (3, 1), (1, 3)]` → heap exceeds size `k`, pop `(1, 3)` → heap = `[(2, 2), (3, 1)]`
+- Final result: `[2, 1]`
+
+
+
+This approach is efficient and satisfies the problem's time constraint of being faster than `O(n log n)` when `k` is small compared to `n`.
+
+### Bucket Sort
+
+To achieve truly linear time complexity — `O(n)` — we can avoid both sorting and heaps by using a **bucket sort**-style strategy.
+
+This approach relies on the fact that the **maximum frequency** of any number is bounded by the length of the input array. In other words, no number can appear more than `n` times, so we can use an array of size `n + 1` to "bucket" numbers by how frequently they appear.
+
+
+1. **Count Frequencies:**  
+   As in previous approaches, we start by counting how many times each number appears using a dictionary. This step is `O(n)`.
+
+2. **Bucket by Frequency:**  
+   Next, we create a list of buckets `1 to n`, where the index of each bucket corresponds to a specific frequency.  
+   For example, `buckets[3]` will hold a list of all elements that appear exactly 3 times.  
+   We iterate through the frequency dictionary and place each element in its corresponding bucket.
+
+3. **Collect Top `k`:**  
+   Now we walk through the buckets **in reverse order** (from highest frequency to lowest), collecting elements until we have `k` of them.  
+
+
+**Example:**
+
+Suppose `nums = [1,1,1,2,2,3]` and `k = 2`.
+
+- Frequencies: `{1: 3, 2: 2, 3: 1}`
+- Buckets:  
+  - `buckets[1] = [3]`  
+  - `buckets[2] = [2]`  
+  - `buckets[3] = [1]`
+- Reverse iterate:  
+  - From `buckets[3]`, take `1`  
+  - From `buckets[2]`, take `2`  
+  → Result: `[1, 2]`
+
+
+
+This method is the most efficient and elegant requiring a linear time performance.
+
+
+## Complexity
+
+| Approach     | Time Complexity     | Space Complexity | Meets O(n log n) Constraint? | Notes                                      |
+|--------------|---------------------|------------------|------------------------------|--------------------------------------------|
+| Sorting      | O(n log n)          | O(n)             | ❌ No                        | Simple to implement but too slow for large `n` |
+| Min-Heap     | O(n log k)          | O(n)             | ✅ Yes                       | Efficient when `k` is much smaller than `n` |
+| Bucket Sort  | O(n)                | O(n)             | ✅ Yes                       | Fastest solution; ideal for large inputs    |
+
+
+Each method is correct, but only **Min-Heap** and **Bucket Sort** satisfy the performance constraint. Among them, **Bucket Sort** is the only truly linear-time approach.
 
 ---
 
