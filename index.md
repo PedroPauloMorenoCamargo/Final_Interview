@@ -198,17 +198,90 @@ Each method is correct, but only **Min-Heap** and **Bucket Sort** satisfy the pe
 
 ## Solution visualization
 
-## Solution Visualization
+<details>
+<summary><strong>Slide 1</strong></summary>
+<img src="slides/k_frequent_elements-1.png" width="700"/>
+</details>
 
-## Solution Visualization
+<details>
+<summary><strong>Slide 2</strong></summary>
+<img src="slides/k_frequent_elements-2.png" width="700"/>
+</details>
 
-<p align="center">
-  <img src="slides/k_frequent_elements-1.png" width="700"/>
-  <img src="slides/k_frequent_elements-2.png" width="700"/>
-  <img src="slides/k_frequent_elements-3.png" width="700"/>
-  <img src="slides/k_frequent_elements-4.png" width="700"/>
-  <img src="slides/k_frequent_elements-5.png" width="700"/>
-</p>
+<details>
+<summary><strong>Slide 3</strong></summary>
+<img src="slides/k_frequent_elements-3.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 4</strong></summary>
+<img src="slides/k_frequent_elements-4.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 5</strong></summary>
+<img src="slides/k_frequent_elements-5.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 6</strong></summary>
+<img src="slides/k_frequent_elements-6.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 7</strong></summary>
+<img src="slides/k_frequent_elements-7.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 8</strong></summary>
+<img src="slides/k_frequent_elements-8.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 9</strong></summary>
+<img src="slides/k_frequent_elements-9.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 10</strong></summary>
+<img src="slides/k_frequent_elements-10.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 11</strong></summary>
+<img src="slides/k_frequent_elements-11.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 12</strong></summary>
+<img src="slides/k_frequent_elements-12.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 13</strong></summary>
+<img src="slides/k_frequent_elements-13.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 14</strong></summary>
+<img src="slides/k_frequent_elements-14.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 15</strong></summary>
+<img src="slides/k_frequent_elements-15.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 16</strong></summary>
+<img src="slides/k_frequent_elements-16.png" width="700"/>
+</details>
+
+<details>
+<summary><strong>Slide 17</strong></summary>
+<img src="slides/k_frequent_elements-17.png" width="700"/>
+</details>
 
 
 ## References
