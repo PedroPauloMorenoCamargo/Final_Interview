@@ -139,7 +139,7 @@ Suppose `nums = [1,1,1,2,2,3]` and `k = 2`.
   - Push `(3, 1)` → heap = `[(3, 1)]`
   - Push `(2, 2)` → heap = `[(2, 2), (3, 1)]`
   - Push `(1, 3)` → heap = `[(2, 2), (3, 1), (1, 3)]` → heap exceeds size `k`, pop `(1, 3)` → heap = `[(2, 2), (3, 1)]`
-- Final result: `[2, 1]`
+- Top 2 elements: `[2, 1]`
 
 
 
@@ -176,7 +176,7 @@ Suppose `nums = [1,1,1,2,2,3]` and `k = 2`.
 - Reverse iterate:  
   - From `buckets[3]`, take `1`  
   - From `buckets[2]`, take `2`  
-  → Result: `[1, 2]`
+- Top 2 elements: `[1, 2]`
 
 
 
