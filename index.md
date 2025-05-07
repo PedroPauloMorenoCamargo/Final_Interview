@@ -48,40 +48,38 @@ def topKFrequent(nums: list[int], k: int) -> list[int]
 
 ## Hints
 
-<details>
-<summary>1. What’s the first step?</summary>
+## Hints
 
-We need to know how many times each number appears in the array.  
-Is there a data structure that can help us count occurrences quickly?
+<details>
+<summary><strong>Hint 1</strong></summary>
+
+What’s the first step? We need to know how many times each number appears in the array. Is there a data structure that can help us count occurrences quickly?
 </details>
 
 <details>
-<summary>2. After counting, how do we find the top `k`?</summary>
+<summary><strong>Hint 2</strong></summary>
 
-Once we have the frequencies, how do we efficiently find the top `k` elements?  
-Can we avoid sorting the entire list?
+How do we find the top `k` elements? Once we have the frequencies, how do we efficiently find the top `k` elements? Can we avoid sorting the entire list?
 </details>
 
 <details>
-<summary>3. Could a heap help?</summary>
+<summary><strong>Hint 3</strong></summary>
 
-Heaps are great for retrieving top values efficiently.  
-Could we use a min-heap of size `k` to track the most frequent elements as we go?
+Could a heap help?Heaps are great for retrieving top values efficiently. Could we use a min-heap of size `k` to track the most frequent elements as we go?
 </details>
 
 <details>
-<summary>4. Can we do better than a heap?</summary>
+<summary><strong>Hint 4</strong></summary>
 
-What if we wanted to do better?  
-Could we group elements by frequency and then iterate from highest to lowest?
+What if we wanted to do better? Could we group elements by frequency and then iterate from highest to lowest?
 </details>
 
 <details>
-<summary>5. What’s the role of a frequency bound?</summary>
+<summary><strong>Hint 5</strong></summary>
 
-This problem has a clear upper bound on frequency — no number appears more than `n` times.  
-Could we use this to our advantage with something like **bucket sort**?
+What’s the role of a frequency bound? This problem has a clear upper bound on frequency — no number appears more than `n` times. Could we use this to our advantage with something like **bucket sort**?
 </details>
+
 
 ---
 
