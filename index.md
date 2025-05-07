@@ -4,6 +4,8 @@
 
 **Amazon Top K Frequent Elements**
 
+---
+
 ## Top K Frequent Elements
 
 Given an integer array `nums`, return the **`k`** most frequent elements.  
