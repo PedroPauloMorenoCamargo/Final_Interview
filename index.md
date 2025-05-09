@@ -55,13 +55,13 @@ What’s the first step? We need to know how many times each number appears in t
 <details>
 <summary><strong>Hint 2</strong></summary>
 
-How do we find the top `k` elements? Once we have the frequencies, how do we efficiently find the top `k` elements? Can we avoid sorting the entire list?
+How do we find the top k elements? Once we have the frequencies, how do we efficiently find the top k elements? Can we avoid sorting the entire list?
 </details>
 
 <details>
 <summary><strong>Hint 3</strong></summary>
 
-Could a heap help?Heaps are great for retrieving top values efficiently. Could we use a min-heap of size `k` to track the most frequent elements as we go?
+Could a heap help?Heaps are great for retrieving top values efficiently. Could we use a min-heap of size k to track the most frequent elements as we go?
 </details>
 
 <details>
@@ -73,7 +73,7 @@ What if we wanted to do better? Could we group elements by frequency and then it
 <details>
 <summary><strong>Hint 5</strong></summary>
 
-What’s the role of a frequency bound? This problem has a clear upper bound on frequency — no number appears more than `n` times. Could we use this to our advantage with something like **bucket sort**?
+What’s the role of a frequency bound? This problem has a clear upper bound on frequency — no number appears more than n times. Could we use this to our advantage with something like bucket sort ?
 </details>
 
 
@@ -197,91 +197,6 @@ Each method is correct, but only **Min-Heap** and **Bucket Sort** satisfy the pe
 ---
 
 ## Solution visualization
-
-<details>
-<summary><strong>Slide 1</strong></summary>
-<img src="slides/k_frequent_elements-1.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 2</strong></summary>
-<img src="slides/k_frequent_elements-2.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 3</strong></summary>
-<img src="slides/k_frequent_elements-3.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 4</strong></summary>
-<img src="slides/k_frequent_elements-4.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 5</strong></summary>
-<img src="slides/k_frequent_elements-5.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 6</strong></summary>
-<img src="slides/k_frequent_elements-6.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 7</strong></summary>
-<img src="slides/k_frequent_elements-7.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 8</strong></summary>
-<img src="slides/k_frequent_elements-8.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 9</strong></summary>
-<img src="slides/k_frequent_elements-9.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 10</strong></summary>
-<img src="slides/k_frequent_elements-10.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 11</strong></summary>
-<img src="slides/k_frequent_elements-11.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 12</strong></summary>
-<img src="slides/k_frequent_elements-12.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 13</strong></summary>
-<img src="slides/k_frequent_elements-13.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 14</strong></summary>
-<img src="slides/k_frequent_elements-14.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 15</strong></summary>
-<img src="slides/k_frequent_elements-15.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 16</strong></summary>
-<img src="slides/k_frequent_elements-16.png" width="700"/>
-</details>
-
-<details>
-<summary><strong>Slide 17</strong></summary>
-<img src="slides/k_frequent_elements-17.png" width="700"/>
-</details>
 
 
 ## References
